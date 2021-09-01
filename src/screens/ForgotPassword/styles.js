@@ -8,24 +8,13 @@ export const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   logo: {
-    width: 264,
-    height: 264,
-    marginBottom: 64
+    width: 141,
+    height: 141,
+    marginBottom: 14
   },
   login: {
     width: '100%',
     alignItems: 'center'
-  },
-  login2: {
-    width: '70%',
-    marginBottom: 21,
-    alignItems: 'flex-start'
-  },
-  login3: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '70%',
-    height: 42
   },
   textInput: {
     backgroundColor: '#F6F8FF',
@@ -38,10 +27,12 @@ export const styles = StyleSheet.create({
   },
   Text: {
     color: '#f6f8ff',
-    fontSize: 16,
-    textDecorationLine: 'underline'
+    fontSize: 24,
+    fontWeight: '700',
+    marginBottom: 10
   },
   button: {
+    marginTop: 36,
     width: 104,
     height: 42,
     borderRadius: 10
