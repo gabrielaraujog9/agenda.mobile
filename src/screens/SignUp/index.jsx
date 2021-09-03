@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 import { styles } from './styles';
 import logo from '../../assets/schedule.png';
-import Svg1 from '../../assets/schedule.svg';
 
 export function SignUp() {
   const [password, setPassword] = useState('');

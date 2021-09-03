@@ -9,12 +9,12 @@ import { SignIn } from './screens/SignIn';
 import { SignUp } from './screens/SignUp';
 import { ForgotPassword } from './screens/ForgotPassword';
 
-const Stack = createStackNavigator();
+const { Navigator, Screen } = createStackNavigator();
 
 export default function Routes() {
   return (
     <NavigationContainer>
-      <Stack.Navigator
+      <Navigator
         screenOptions={{
           headerShown: false,
           gestureEnabled: false,
@@ -22,10 +22,10 @@ export default function Routes() {
         }}
         initialRouteName="SignIn"
       >
-        <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
-      </Stack.Navigator>
+        <Screen name="SignIn" component={SignIn} />
+        <Screen name="SignUp" component={SignUp} />
+        <Screen name="ForgotPassword" component={ForgotPassword} />
+      </Navigator>
     </NavigationContainer>
   );
 }
