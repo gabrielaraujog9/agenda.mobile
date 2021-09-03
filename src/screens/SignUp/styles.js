@@ -33,8 +33,8 @@ export const styles = StyleSheet.create({
   },
   button: {
     marginTop: 36,
-    width: 104,
-    height: 42,
-    borderRadius: 10
+    width: 190,
+
+    borderRadius: 20
   }
 });

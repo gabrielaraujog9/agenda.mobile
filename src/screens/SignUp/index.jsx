@@ -55,7 +55,7 @@ export function SignUp() {
           onChangeText={setPasswordConfirm}
         />
         <View style={styles.button}>
-          <Button title="Cadastre-se" onPress={handleSubmit} />
+          <Button title="Cadastre-se" color="#2672DE" onPress={handleSubmit} />
         </View>
       </View>
       <StatusBar style="inverted" />

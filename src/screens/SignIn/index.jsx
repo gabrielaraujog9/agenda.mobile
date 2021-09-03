@@ -9,13 +9,9 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { styles } from './styles';
-import { SignUp } from '../SignUp';
 import logo from '../../assets/schedule.png';
 
-export function SignIn() {
-  function teste() {
-    return <SignUp />;
-  }
+export function SignIn({ navigation }) {
   // const [showPass, setShowPass] = useState(false);
   return (
     <View style={styles.container}>
@@ -37,12 +33,12 @@ export function SignIn() {
         />
       </View>
       <View style={styles.login2}>
-        <TouchableOpacity onPress={teste}>
+        <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
           <Text style={styles.Text}>Esqueci minha senha!</Text>
         </TouchableOpacity>
       </View>
       <View style={styles.login3}>
-        <TouchableOpacity onPress={teste}>
+        <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
           <Text style={styles.Text}>Cadastre-se</Text>
         </TouchableOpacity>
 
@@ -50,6 +46,7 @@ export function SignIn() {
           <Button title="Entrar" color="#2672DE" />
         </View>
       </View>
+      <StatusBar style="inverted" />
     </View>
   );
 }

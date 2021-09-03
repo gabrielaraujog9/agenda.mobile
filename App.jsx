@@ -1,5 +1,6 @@
 import React from 'react';
-import { ForgotPassword } from './src/screens/ForgotPassword';
+import Routes from './src/Routes';
+
 export default function App() {
-  return <ForgotPassword />;
+  return <Routes />;
 }
