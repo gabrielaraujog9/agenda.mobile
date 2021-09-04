@@ -11,6 +11,7 @@ import {
 } from 'react-native';
 import { styles } from './styles';
 import logo from '../../assets/schedule.png';
+import ScheduleSvg from '../../assets/schedule.svg'
 
 export function SignUp() {
   const [password, setPassword] = useState('');
@@ -30,6 +31,9 @@ export function SignUp() {
 
   return (
     <View style={styles.container}>
+
+       {/* <ScheduleSvg  /> */}
+
       <Image style={styles.logo} source={logo} />
       <View style={styles.login}>
         <Text style={styles.Text}>Criar conta</Text>
